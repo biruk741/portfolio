@@ -1,0 +1,135 @@
+nav {
+  position: fixed;
+  top: 460px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.container {
+  margin-top: -100px;
+  height: 650px;
+  width: 100%;
+  background: url('/assets/bg.svg');
+  // background-size: cover;
+  position: relative;
+  // background-position: 0px 600px;
+}
+
+.pp {
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  width: 170px;
+  height: 170px;
+  border-radius: 200px;
+  border: 2px solid #fff;
+
+}
+
+.outer {
+  background: #f1f2f3;
+  height: 100vh;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+
+  h1 {
+    font-family: "ProductSansBold";
+    color: #fff;
+    font-size: 4em;
+    margin: 0px;
+  }
+
+  h3 {
+    font-family: "ProductSansItalic";
+    color: #fff;
+    font-size: 1.7em;
+    margin: 0px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+}
+.body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  background-color: #fff;
+  padding: 0px 60px 5px 60px;
+  border-radius: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.144);
+
+  &>* {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .selected {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    min-width: 100px;
+    padding: 8px 20px;
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: "ProductSansBold";
+    color: #48B2A7;
+    border-radius: 100px;
+    transition-duration: 200ms;
+    border: 2px solid #48B2A7;
+    color: #48B2A7;
+    // &:hover {
+
+    //   -webkit-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.23);
+    //   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.23);
+    // }
+  }
+
+  .unselected {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    min-width: 100px;
+    padding: 8px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "ProductSansBold";
+    color: rgba(0, 0, 0, 0.55);
+    transition-duration: 200ms;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+
+    border-bottom: 5px solid transparent;
+
+   &:hover {
+    padding: 3px 20px;
+
+      color: #48B2A7;
+      border-bottom: 5px solid #48B2A7;
+    }
+  }
+}
+
+@media screen and (min-width:1982px) {
+  .container {
+    background-size: cover;
+  }
+}

@@ -1,0 +1,24 @@
+<div class="outer">
+  <div class="container">
+    <nav></nav>
+    <div></div>
+    <div class="inner">
+      <img src="/assets/pfp.jpg" class="pp">
+      <h1>Biruk Mengistu</h1>
+      <h3>Software Developer / Student</h3>
+    </div>
+
+  </div>
+  <div class="body">
+    <div class="tabs">
+      <div [ngClass]="{'selected':selected==='about','unselected':selected!=='about'}" class="selected" (click)="selected = 'about'">About Me</div>
+      <div [ngClass]="{'selected':selected==='education','unselected':selected!=='education'}" (click)="selected = 'education'">Education</div>
+      <div [ngClass]="{'selected':selected==='work','unselected':selected!=='work'}" (click)="selected = 'work'">Work</div>
+      <div [ngClass]="{'selected':selected==='portfolio','unselected':selected!=='portfolio'}" (click)="selected = 'portfolio'">Portfolio</div>
+    </div>
+    <div class="pages" [ngSwitch]="selected">
+
+    </div>
+  </div>
+
+</div>

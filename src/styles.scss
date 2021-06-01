@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "ProductSans";
+  src: url('/assets/ProductSansRegular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "ProductSansBold";
+  src: url('/assets/ProductSansBold.ttf') format("truetype");
+}
+@font-face {
+  font-family: "ProductSansItalic";
+  src: url('/assets/ProductSansItalic.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "ProductSansBoldItalic";
+  src: url('/assets/ProductSansBoldItalic.ttf') format("truetype");
+}
+html,body{
+  margin: 0;
+}
+body{
+  height: 100vh;
+  font-family: 'ProductSans';
+}
