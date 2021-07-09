@@ -13,11 +13,28 @@
     <div class="tabs">
       <div [ngClass]="{'selected':selected==='about','unselected':selected!=='about'}" class="selected" (click)="selected = 'about'">About Me</div>
       <div [ngClass]="{'selected':selected==='education','unselected':selected!=='education'}" (click)="selected = 'education'">Education</div>
-      <div [ngClass]="{'selected':selected==='work','unselected':selected!=='work'}" (click)="selected = 'work'">Work</div>
+      <div [ngClass]="{'selected':selected==='work','unselected':selected!=='work'}" (click)="selected = 'work'">Experience</div>
       <div [ngClass]="{'selected':selected==='portfolio','unselected':selected!=='portfolio'}" (click)="selected = 'portfolio'">Portfolio</div>
+      <div [ngClass]="{'selected':selected==='contact','unselected':selected!=='contact'}" (click)="selected = 'contact'">Contact</div>
+
     </div>
     <div class="pages" [ngSwitch]="selected">
+      <div *ngSwitchCase="'about'" [@enterTrigger]="'fadeIn'">
+        <app-about ></app-about>
+      </div>
+      <div *ngSwitchCase="'education'" [@enterTrigger]="'fadeIn'">
+        <app-education></app-education>
+      </div>
+      <div *ngSwitchCase="'work'" [@enterTrigger]="'fadeIn'">
+        <app-experience ></app-experience>
+      </div>
+      <div *ngSwitchCase="'portfolio'" [@enterTrigger]="'fadeIn'">
+        <app-portfolio ></app-portfolio>
+      </div>
+      <div *ngSwitchCase="'contact'" [@enterTrigger]="'fadeIn'">
+        <app-contact ></app-contact>
 
+      </div>
     </div>
   </div>
 

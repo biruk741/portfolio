@@ -17,6 +17,14 @@
   font-family: "ProductSansBoldItalic";
   src: url('/assets/ProductSansBoldItalic.ttf') format("truetype");
 }
+@font-face {
+  font-family: "Circular";
+  src: url('/assets/circular.ttf') format("truetype");
+}
+@font-face {
+  font-family: "CircularBold";
+  src: url('/assets/circular-bold.ttf') format("truetype");
+}
 html,body{
   margin: 0;
 }

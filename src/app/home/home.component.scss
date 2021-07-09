@@ -29,7 +29,7 @@ nav {
 
 .outer {
   background: #f1f2f3;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .inner {
@@ -57,9 +57,11 @@ nav {
     opacity: 0.8;
   }
 }
-.body{
+
+.body {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -68,6 +70,10 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 70px;
+  position: sticky;
+  top: 10px;
+  z-index: 500;
+
   background-color: #fff;
   padding: 0px 60px 5px 60px;
   border-radius: 100px;
@@ -119,12 +125,18 @@ nav {
 
     border-bottom: 5px solid transparent;
 
-   &:hover {
-    padding: 3px 20px;
+    &:hover {
+      padding: 3px 20px;
 
       color: #48B2A7;
       border-bottom: 5px solid #48B2A7;
     }
+  }
+}
+.pages{
+  width: 100%;
+  &>div{
+    width: 100%;
   }
 }
 
@@ -132,4 +144,53 @@ nav {
   .container {
     background-size: cover;
   }
+}
+
+@media screen and (max-width:1150px) {
+  .container {
+    margin-top: -180px;
+    height: 650px;
+    width: 100%;
+    background: url('/assets/bg.svg');
+    // background-size: cover;
+    position: relative;
+    // background-position: 0px 600px;
+  }
+  .inner {
+    top: 20px;
+    h1 {
+      font-size: 2.6em;
+      margin-top: 10px;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+  }
+  .tabs {
+    gap: 10px;
+    padding: 0px 20px 5px 20px;
+    border-radius: 0px;
+    border: 0px;
+    width: 100%;
+    top:0px;
+    background-color: #f1f2f3;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.144);
+
+    .selected {
+
+      min-width: 70px;
+      padding: 8px 20px;
+      font-size: 15px;
+
+    }
+
+    .unselected {
+      min-width: 40px;
+      padding: 8px 20px;
+      font-size: 15px;
+
+    }
+  }
+
 }
