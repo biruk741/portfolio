@@ -139,6 +139,29 @@ nav {
     width: 100%;
   }
 }
+.resume,.github{
+  width: 200px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  &:hover{
+    background-color: #fff;
+    color: #48B2A7;
+    cursor: pointer;
+  }
+}
+.github{
+  top: 30px;
+  right: 250px;
+}
 
 @media screen and (min-width:1982px) {
   .container {
@@ -192,5 +215,7 @@ nav {
 
     }
   }
-
+  .resume,.github{
+    display: none;
+  }
 }

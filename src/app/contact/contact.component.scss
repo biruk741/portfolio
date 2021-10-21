@@ -1,0 +1,18 @@
+.whole{
+  width: 90%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dots{
+  display: flex;
+}
+.dot{
+  width: 18px;
+  height: 18px;
+  background-color: #000;
+  border-radius: 100px;
+  margin: 0px 20px;
+}
